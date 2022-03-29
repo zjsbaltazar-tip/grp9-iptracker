@@ -27,6 +27,7 @@
     </head>
     <body>
         <h1>Hello world!</h1>
+<<<<<<< HEAD
         <a href="{% url 'ip_api:result' %}">Go to result page</a>
 =======
 >>>>>>> 1957a514f32a2e2729b62343a978b0ace453a19d
@@ -47,5 +48,13 @@
         </center>
         
 >>>>>>> b4bbc62ceedfc4fb72664861ea6de32cf421d8a8
+=======
+        <form method="POST">
+            {% csrf_token %}
+            <label for="ip_address">IP Address: </label>
+            <input type="text" id="ip_address" name="ip_address">
+            <button type="submit">Submit</button>
+        </form>
+>>>>>>> origin/back-end
     </body>
 </html>
