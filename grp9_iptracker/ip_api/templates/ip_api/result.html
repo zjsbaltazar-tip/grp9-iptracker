@@ -29,7 +29,20 @@
 =======
             <center>
                 <h1>IP INFORMATION RESULT</h1>
-                <div class="square"></div>
+                <div class="square">
+                    <table>
+                        <tr>
+                          <th>Key</th>
+                          <th>Value</th>
+                        </tr>
+                        {% for key, value in data.items %}
+                            <tr>
+                                <td>{{ key }}</td>
+                                <td>{{ value }}</td>
+                            </tr>   
+                        {% endfor %}
+                      </table>
+                </div>
             </center>
             
 >>>>>>> 38b4691eaf024ae68245fcf1daf353cf49274c57
