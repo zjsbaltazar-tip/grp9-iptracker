@@ -12,19 +12,7 @@
             text-align:center;
             border: 2px solid rgb(255, 255, 255);
             background-color: transparent;
-        }
-        .bottomright {
-            position: absolute;
-            bottom: 8px;
-            right: 16px;
-            font-size: 18px;
-        }
-        a:link {
-            color: white;
-            background-color: transparent;
-            text-decoration: none;
-            font-size:20px;
-            font-family:Verdana;
+            width: 600px;
         }
         .square {
             position: center;
@@ -34,8 +22,16 @@
         }
     </style>
         <body background="{% static 'img/background.jpg'%}">
+<<<<<<< HEAD
             <h1>IP INFORMATION RESULT</h1>
             <center><div class="square"></div></center>
             <div class="bottomright"><a href="{% url 'ip_api:index' %}">Go back to Home Page</a></div>
+=======
+            <center>
+                <h1>IP INFORMATION RESULT</h1>
+                <div class="square"></div>
+            </center>
+            
+>>>>>>> 38b4691eaf024ae68245fcf1daf353cf49274c57
         </body>
 </html>
